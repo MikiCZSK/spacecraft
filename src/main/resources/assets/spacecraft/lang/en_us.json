@@ -1,4 +1,6 @@
 {
   "item.spacecraft.aluminiumingot": "Aluminium ingot",
-  "item.spacecraft.rawaluminium": "Raw Aluminium"
+  "item.spacecraft.rawaluminium": "Raw Aluminium",
+
+  "itemGroup.spacecrafttab": "Space craft"
 }

@@ -1,6 +1,6 @@
 package net.eliczsk.spacecraft.item;
 
-
+import net.eliczsk.spacecraft.item.ModCreativeModeTab;
 import net.eliczsk.spacecraft.SpaceCraft;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -17,9 +17,9 @@ public class ModItems {
     //Adding of Item itself
 
     public static final RegistryObject<Item> ALUMINIUMINGOT = ITEMS.register( "aluminiumingot",
-            ()-> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+            ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB_SPACECRAFT)));
     public static final RegistryObject<Item> RAWALUMINIUM = ITEMS.register( "rawaluminium",
-            ()-> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+            ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB_SPACECRAFT)));
    /* public static final RegistryObject<Item> TININGOT = ITEMS.register( "tiningot",
             ()-> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
     public static final RegistryObject<Item> TININGOT = ITEMS.register( "tiningot",
