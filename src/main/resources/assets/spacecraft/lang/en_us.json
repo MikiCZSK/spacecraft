@@ -2,5 +2,10 @@
   "item.spacecraft.aluminiumingot": "Aluminium ingot",
   "item.spacecraft.rawaluminium": "Raw Aluminium",
 
+  "block.spacecraft.aluminium_block": "Block of Aluminium",
+  "block.spacecraft.aluminium_ore": "Aluminium ore",
+  "block.spacecraft.deepslate_aluminium_ore": "Deepslate Aluminium ore",
+  "block.spacecraft.moon_turf": "Moon turf",
+
   "itemGroup.spacecrafttab": "Space craft"
 }
