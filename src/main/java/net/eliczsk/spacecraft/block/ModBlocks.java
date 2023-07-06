@@ -26,13 +26,15 @@ public class ModBlocks {
 
     //Blocks, also needed to make json files in blockstates, models (block and item) and textures
     public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f)), ModCreativeModeTab.TAB_SPACECRAFT);
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(4f)), ModCreativeModeTab.TAB_SPACECRAFT);
     public static final RegistryObject<Block> ALUMINIUM_ORE = registerBlock("aluminium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()),ModCreativeModeTab.TAB_SPACECRAFT);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f).requiresCorrectToolForDrops()),ModCreativeModeTab.TAB_SPACECRAFT);
     public static final RegistryObject<Block> DEEPSLATE_ALUMINIUM_ORE = registerBlock("deepslate_aluminium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()),ModCreativeModeTab.TAB_SPACECRAFT);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f).requiresCorrectToolForDrops()),ModCreativeModeTab.TAB_SPACECRAFT);
 
     public static final RegistryObject<Block> MOON_TURF = registerBlock("moon_turf",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.TAB_SPACECRAFT);
+    public static final RegistryObject<Block> MOON_STONE = registerBlock("moon_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.TAB_SPACECRAFT);
 
 

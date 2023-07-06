@@ -1,11 +1,15 @@
 {
-  "item.spacecraft.aluminiumingot": "Aluminium ingot",
-  "item.spacecraft.rawaluminium": "Raw Aluminium",
+  "item.spacecraft.aluminium_ingot": "Aluminium ingot",
+  "item.spacecraft.raw_aluminium_ore": "Raw Aluminium",
+  "item.spacecraft.grappling_hook": "Grappling Hook",
+
+
 
   "block.spacecraft.aluminium_block": "Block of Aluminium",
   "block.spacecraft.aluminium_ore": "Aluminium ore",
   "block.spacecraft.deepslate_aluminium_ore": "Deepslate Aluminium ore",
   "block.spacecraft.moon_turf": "Moon turf",
+  "block.spacecraft.moon_stone": "Moon stone",
 
   "itemGroup.spacecrafttab": "Space craft"
 }

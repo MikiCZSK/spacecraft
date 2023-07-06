@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "spacecraft:item/aluminiumingot"
+    "layer0": "spacecraft:item/aluminium_ingot"
   }
 }
