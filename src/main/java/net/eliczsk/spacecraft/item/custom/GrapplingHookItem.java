@@ -1,14 +1,13 @@
 package net.eliczsk.spacecraft.item.custom;
 
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
 
 public class GrapplingHookItem extends Item {
@@ -16,20 +15,27 @@ public class GrapplingHookItem extends Item {
         super(properties);
     }
 
-    @Override
+    @Override // DOES NOT WORK
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if(!level.isClientSide()) {
-            Vec3 a = player.getLookAngle();
+            Vec3 angles = player.getLookAngle();
             Vec3 locationofplayer = player.position();
-            Vec3 offset;
-            offset.add(1,2,6);
+          //  player.sendSystemMessage(Component.literal("First" + locationofplayer));
+            Vec3 offset = new Vec3(10.0,10.0,10.0);
 
-           // a *= offset;
-          //  player.move();
-            player.sendSystemMessage(Component.literal("Hello" + a));
-            player.getCooldowns().addCooldown(this,20);
-            if(player.isNoGravity())
-                player.setNoGravity(false);
+          //  player.sendSystemMessage(Component.literal("Second" + locationofplayer));
+
+            double resX = angles.x * offset.x;
+            double resY = angles.y * offset.y;
+            double resZ = angles.z * offset.z;
+            double test = 2.0f;
+            Vec3 tests = new Vec3(test,test,test);
+
+            player.move(MoverType.PLAYER,locationofplayer.add(resX,resY,resZ));
+            player.move(MoverType.PISTON,tests);
+
+         //  player.getCooldowns().addCooldown(this,20);
+
 
         }
 

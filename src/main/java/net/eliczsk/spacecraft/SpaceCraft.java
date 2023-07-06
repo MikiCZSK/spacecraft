@@ -3,6 +3,7 @@ package net.eliczsk.spacecraft;
 import com.mojang.logging.LogUtils;
 import net.eliczsk.spacecraft.block.ModBlocks;
 import net.eliczsk.spacecraft.item.ModItems;
+import net.eliczsk.spacecraft.world.dimention.ModDimentions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,6 +30,8 @@ public class SpaceCraft
        //bus for items
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDimentions.register();
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
